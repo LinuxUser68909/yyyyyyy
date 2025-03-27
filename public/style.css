@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f6d365, #fda085);
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.avatar img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: float 4s infinite ease-in-out;
+}
+
+.text h1 {
+  font-size: 2em;
+  color: #444;
+}
+
+.text p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
